@@ -1,9 +1,12 @@
 <section id="cover">
     <div id="cover-caption">
-        <h1>Salvation Request</h1>
-        <h5>Submit your request now and get all the support you need </h5>
-        <button type="button" class="btn btn-outline-dark btn-lg">Sign up</button>
-        <button type="button" class="btn btn-dark btn-lg">Sign in</button>
+        <h1>Requests Index</h1>
+        <% @requests.each do |request|%>
+
+        <li> <%= request.request_type%> and the status is <%= request.request_status%> </li>
+
+        <% end%>
+
     </div>
 
 </section>
